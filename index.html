@@ -4,35 +4,49 @@
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="favicon.ico" type="image/x-icon"/>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-        <title>Inkling's Lair</title>
+        <title>Inkling's Spooky Lair</title>
         <style>
+            :root {
+            --background-color: rgb(194, 132, 144);
+            --copy-color: rgb(90, 69, 114);
+            }
+
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --background-color: rgb(90, 69, 114);
+                    --copy-color: rgb(194, 132, 144);
+                }
+            }
+
             body{
-                background-color: rgb(32, 34, 37);
+                background-color: var(--background-color);
             }
             h1, p{
-                color: rgb(242, 243, 245);
+                color: rgb(244, 150, 79);
                 font-family: "Segoe UI", sans-serif;
                 text-align: center;
             }
             div{
                 text-align: center;
+                border-top: 4vh solid var(--background-color);
             }
             iframe{
                 width: 25vw;
                 height: 70vh;
             }
             .innerdiv{
-                border-top: 4vh solid rgb(32, 34, 37);
+                border-top: 0px;
                 width: 44vw;
                 height: 90vh;
-                background-color: rgb(54, 57, 63);
+                background-color: rgb(131, 101, 165);
+                border-radius: 25px 0px 0px 25px;
             }
             #light{
-                border-left: 4vw solid rgb(32, 34, 37);
-                background-color: rgb(242, 243, 245);
+                background-color: rgb(244, 150, 79);
+                border-radius: 0px 25px 25px 0px;
             }
             #lighttitle{
-                color: rgb(54, 57, 63);
+                color: rgb(131, 101, 165);
             }
             #metadiv{
                 display:flex;
@@ -41,6 +55,7 @@
                 align-items: center
             }
             #versioncopy{
+                color: var(--copy-color);
                 text-align: right;
                 font-size: 80%;
             }
@@ -49,14 +64,14 @@
     <body>
         <div id="metadiv">
             <div class="innerdiv">
-                <h1>&iexclBienvenido al server de Inkling's Lair!</h1>
+                <h1>&iexclBienvenido a Inkling's Spooky Lair!</h1>
                 <iframe src="https://discordapp.com/widget?id=823106886391824384&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             </div>
             <div id="light" class="innerdiv">
-                <h1 id="lighttitle">Si quieres, tambi&eacuten puedes joderte los ojos...</h1>
+                <h1 id="lighttitle">Por si eres de los pocos que usan el modo claro...</h1>
                 <iframe src="https://discordapp.com/widget?id=823106886391824384&theme=light" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
             </div>
         </div>
-        <p id="versioncopy">v1.1.0 &copy AsierMR</p>
+        <p id="versioncopy">v2.0.0 &copy AsierMR</p>
     </body>
 </html>
