@@ -1,0 +1,59 @@
+:root {
+    --background-color: rgb(194, 132, 144);
+    --copy-color: rgb(90, 69, 114);
+    --dark-color: rgb(131, 101, 165);
+    --light-color: rgb(244, 150, 79);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: rgb(90, 69, 114);
+        --copy-color: rgb(194, 132, 144);
+    }
+}
+
+body{
+    background-color: var(--background-color);
+}
+h1, p{
+    color: var(--light-color);
+    font-family: "Segoe UI", sans-serif;
+    text-align: center;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+div{
+    text-align: center;
+    border-top: 4vh solid var(--background-color);
+}
+iframe{
+    border-radius: 25px;
+    width: 25vw;
+    height: 70vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.innerdiv{
+    border-top: 0px;
+    width: 44vw;
+    height: 90vh;
+    background-color: var(--dark-color);
+    border-radius: 25px 0px 0px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+#light{
+    background-color: var(--light-color);
+    border-radius: 0px 25px 25px 0px;
+}
+#lighttitle{
+    color: var(--dark-color);
+}
+#metadiv{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+#versioncopy{
+    color: var(--copy-color);
+    text-align: right;
+    font-size: 80%;
+}
