@@ -1,13 +1,13 @@
 :root {
     --background-color: rgb(255, 255, 255);
-    --copy-color: rgb(32, 34, 37);
-    --dark-color: rgb(54, 57, 63);
-    --light-color: rgb(242, 243, 245);
+    --copy-color: rgb(38, 47, 53);
+    --dark-color: rgb(77, 89, 97);
+    --light-color: rgb(216, 234, 245);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: rgb(32, 34, 37);
+        --background-color: rgb(38, 47, 53);
         --copy-color: rgb(255, 255, 255);
     }
 }
